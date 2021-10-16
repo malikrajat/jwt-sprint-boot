@@ -12,4 +12,9 @@ public class HomeController {
 		text += "Rajat";
 		return text;
 	}
+	
+	@GetMapping("/getUser")
+	public String getUsers() {
+		return "{\"nam\": \"Rajat\"}";
+	}
 }
